@@ -1,0 +1,18 @@
+{
+	"name": "hermajan/templates",
+	"description": "",
+	"type": "library",
+	"license": "MIT",
+
+	"config": {
+		"vendor-dir": "libs",
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"optimize-autoloader": true
+	},
+
+	"require-dev": {
+		"fortawesome/font-awesome": "^4.7",
+		"twbs/bootstrap": "^3.3"
+	}
+}
