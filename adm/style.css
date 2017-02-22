@@ -1,0 +1,103 @@
+/**
+ * Layout of elements in the template.
+ */
+
+main {
+	margin: 1% 1% 1% 1%;
+	padding: 1px;
+	border: 2px solid #cc9;
+	border-radius: 15px;
+}
+
+header {
+	height: 60px;
+	padding: 10px;
+	margin: 2px 2px 0px 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+header h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+header h1 a {
+	text-decoration: none;
+}
+
+.headerLeft {
+	float: left;
+}
+
+.headerRight {
+	float: right;
+}
+
+section {
+	display: flex;
+}
+
+nav {
+	float: left;
+	width: 20%;
+	max-width: 200px;
+	padding: 2px;
+	margin: 0px 0px 0px 2px;
+	overflow: hidden;
+	flex: 1;
+}
+nav li {
+	list-style-type: none;
+}
+
+.section {
+	border-radius: 5px;
+	padding: 2px;
+}
+.section a {
+	display: block;
+	text-decoration: none;
+}
+
+.caption {
+	text-align: center;
+	font-weight: bold;
+}
+
+.button {
+	border-style: outset;
+	border-width: 1px;
+	line-height: 110%;
+	padding: 2px 4px;
+	margin: 2px;
+	border-radius: 5px;
+}
+.button a {
+	text-decoration: none;
+}
+.button:hover {
+	border-style: inset;
+}
+
+article {
+	overflow: auto;
+	text-align: justify;
+	padding: 0px 15px;
+	margin: 0px 2px 0px 0px;
+	flex: 2;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	clear: both;
+	font-size: 80%;
+	height: 40px;
+	padding: 5px;
+	margin: 0px 2px 2px 2px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}

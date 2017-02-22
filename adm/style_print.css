@@ -1,0 +1,30 @@
+/**
+ * Layout of elements in the template for printing.
+ */
+
+main {
+	margin: 0px;
+	padding: 1px;
+	border: none;
+}
+
+header {
+	display: none;
+}
+
+nav {
+	display: none;
+}
+
+.section {
+	display: none;
+}
+
+article {
+	padding: 10px;
+	margin: 0px 2px 0px 2px;
+}
+
+footer {
+	display: none;
+}

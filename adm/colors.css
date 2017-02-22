@@ -1,0 +1,25 @@
+/**
+ * List of colors used in the template.
+ */
+body { background:lightgrey; color:black; }
+
+main { background:white; color:black; } 
+main a:link { color:blue; } main a:visited { color:DarkViolet; } main a:hover { color:red; }
+
+header { background:black; color:white; }
+header a:link { color:white; } header a:visited { color:white; } header a:hover { color:red; }
+
+nav { background:black; color:black; }
+nav a:link { color:black; } nav a:visited { color:black; } nav a:hover { color:red; }
+
+.section { background:#FFA700; color:black; }
+.section a:link { color:black; } .section a:visited { color:black; } .section a:hover { color:red; }
+
+.button { background:#FFCF73; color:black; }
+.button a:link { color:black; } .button a:visited { color:black; } .button a:hover { color:red; }
+
+article { background:white; color:black; }
+article a:link { color:blue; } article a:visited { color:DarkViolet; } article a:hover { color:red; }
+
+footer { background:black; color:white; }
+footer a:link { color:white; } footer a:visited { color:DarkViolet; } footer a:hover { color:red; } 
