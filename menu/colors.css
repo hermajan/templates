@@ -1,0 +1,8 @@
+.newmenu li {
+	background: green;
+	border-top-color: white;
+}
+
+.newmenu a, .newmenu i {
+	color: white;
+}

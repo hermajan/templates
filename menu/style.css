@@ -1,0 +1,33 @@
+.newmenu, .newmenu ul { 
+	list-style: none !important;
+	padding-left: 0px !important;
+}
+
+.newmenu li {
+	border-top: 1px solid;
+	margin-bottom: 0px;
+	font-size: 16px;
+	text-align: left;
+	padding: 8px;
+	cursor: pointer;
+	z-index: 2;
+}
+.newmenu li>.toggle:after, .newmenu i.toggle {
+	font-family: "FontAwesome";
+	content: "\f078"; /* symbol for "opening" panels */
+}
+.newmenu li.collapsed>.toggle:after, .newmenu i.collapsed.toggle {
+	font-family: "FontAwesome";
+	content: "\f054"; /* symbol for "collapsed" panels */
+}
+
+.newmenu i {
+	margin-top: 4px;
+}
+
+.newmenu .submenu {
+	margin-left: 0px;
+}
+.newmenu .submenu li:last-child {
+	padding-bottom: 0px;
+}
