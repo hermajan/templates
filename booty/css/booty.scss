@@ -1,0 +1,121 @@
+@import url("../../libs/twbs/bootstrap/dist/css/bootstrap.min.css");
+@import url("../../libs/fortawesome/font-awesome/css/font-awesome.min.css");
+@import "colors";
+
+html, body {
+	height: 100%;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto;
+	/* Negative indent footer by its height */
+	margin: 0 auto -40px;
+	/* Pad bottom by footer height */
+	padding: 0 0 60px;
+}
+
+.container-fluid {
+	margin: 0px 20px;
+	@media(min-width:1000px) {
+		margin: 0px 40px;
+	}
+}
+
+
+
+/* Navbar */
+.navbar {
+	margin-bottom: 0px;
+	
+	.nav > li > a {
+		padding: 15px 10px;
+	}
+}
+
+.navbar-brand > img {
+	display: inline;
+}
+
+.logo {
+	height: 32px;
+}
+
+
+/* Menu */
+#menu { 
+	padding: 10px 0px 0px 0px;
+	
+	.nav {
+		max-width: 300px;
+	}
+	
+	ul.inside {
+		margin-left: 20px;
+	}
+}
+
+
+/* Content */
+.page-header {
+	margin: 10px 0 5px;
+}
+
+.icon {
+	width: 16px;
+}
+
+p {
+	text-align: justify;
+}
+
+td {
+	vertical-align: middle!important;
+}
+
+
+/* Bootstrap Panels */
+.panel {
+	margin-bottom: 0px;
+}
+.panel-heading {
+	cursor: pointer;
+	
+	.toggle:after {
+		font-family: "FontAwesome", serif;
+		content: "\f078"; /* symbol for "opening" panels */
+	}
+	
+	&.collapsed .toggle:after {
+		font-family: "FontAwesome", serif;
+		content: "\f054"; /* symbol for "collapsed" panels */
+	}
+}
+
+.panel-title img {
+	height: 24px;
+}
+
+
+/* Anchor, for permalinks on page chapters */
+.anchor, .anchor > small {
+	color: transparent;
+	
+	&:hover {
+		color: #777;
+		text-decoration: none;
+	}
+}
+
+
+/* Footer */
+#footer {
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	
+	& > .container-fluid {
+		padding: 10px 15px 0px;
+	}
+}

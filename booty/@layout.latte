@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{$description}">
+	<meta name="author" content="{$author}">
+	<meta name="robots" content="{$robots}" n:ifset="$robots">
+	
+	<title>{ifset $title}{$title} - {/ifset}{$webName}</title>
+	
+	{*<link rel="shortcut icon" href="{$weburl}/favicon.ico">*}
+	<link rel="stylesheet" media="screen" href="{$weburl}/css/booty.css">
+	{*<link rel="stylesheet" media="print" href="{$weburl}/print.css">*}
+	
+	<script src="{$weburl}/../libs/jquery/jquery.min.js"></script>
+	<script src="{$weburl}/booty.js"></script>
+	
+	{block #headTag}{/block}
+</head>
+
+<body>
+<div id="wrap">
+	{include $headerFile}
+	
+	<div class="container-fluid">
+		<div class="row">
+		{if $menuExists}
+			{var $cols = "col-sm-8 col-md-9 col-lg-10"}
+		{/if}
+		
+			<article class="col-xs-12 {$cols}">
+				{block #content}{/block}
+			</article>
+		
+		{if $menuExists}
+			<nav class="col-xs-12 col-sm-4 col-md-3 col-lg-2 hidden-print" id="menu">
+				{include $menuFile}
+			</nav>
+		{/if}
+		</div>
+	</div>
+</div>
+
+<script src="{$weburl}/../libs/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+{block #footest}{/block}
+{include $footerFile}
+</body>
+</html>

@@ -1,0 +1,30 @@
+{block #header}
+<header class="navbar navbar-default navbar-static-top navbar-inverse">
+<div class="container-fluid">
+<nav class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="{$weburl}/index.php">
+		<img src="{$weburl}/favicon.ico" class="logo" alt="logo">	{$webName}
+	</a>
+</nav>
+
+<nav class="collapse navbar-collapse">
+	<ul class="nav navbar-nav">
+		<li id="index.php-navbar"><a href="">Home</a></li>
+		<li><a href="">First</a></li>
+		<li><a href="">Second</a></li>
+	</ul>
+
+	<div class="navbar-right">
+		<ul class="nav navbar-nav">
+			<li><a href="">Right navbar</a></li>
+		</ul>
+	</div>
+</nav><!--/.nav-collapse -->
+</div>
+</header>
+{/block}
