@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__."/../libs/autoload.php";
 
-$latte = new Latte\Engine;
-$latte->setTempDirectory(__DIR__."/../_temp");
+$latte = new \Latte\Engine;
+$latte->setTempDirectory(__DIR__."/../.temp");
 
 $parameters = [
 	"weburl" => "/github/templates/booty",
